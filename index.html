@@ -4,48 +4,44 @@
   <meta charset="UTF-8">
   <title>Menu du Moment</title>
   <style>
-    /* Style de base */
     body {
       margin: 0;
       padding: 0;
-      background-color: #ffe8d6; /* Couleur de fond chaleureuse */
+      background-color: #ffe8d6; /* Fond chaleureux */
       font-family: Arial, sans-serif;
-      text-align: center; /* Centre le texte dans tout le body */
+      text-align: center;
     }
-
     header {
-      background-color: #f4a261; /* Bandeau en haut (optionnel) */
+      background-color: #f4a261;
       color: #fff;
       padding: 20px;
     }
-
     h1 {
       margin: 0;
     }
-
     .menu {
       margin: 40px auto;
-      max-width: 800px; /* Largeur max pour ne pas trop étirer sur grand écran */
+      max-width: 800px;
     }
-
     section {
       margin: 30px 0;
     }
-
-    /* Pour les images */
+    .product-images {
+      display: flex;
+      justify-content: center; /* Centre les images */
+      gap: 20px;  /* Espace entre les images */
+      flex-wrap: wrap;
+    }
     figure {
-      display: inline-block; /* Pour que l'image et sa légende restent groupées */
-      margin: 0 auto;
+      margin: 0;
       text-align: center;
     }
-
     figure img {
-      max-width: 300px;       /* Ajuste la taille max de l'image */
-      border-radius: 8px;     /* Coins légèrement arrondis */
+      max-width: 300px;
+      border-radius: 8px;
       display: block;
       margin: 0 auto;
     }
-
     figcaption {
       margin-top: 8px;
       font-style: italic;
@@ -54,34 +50,36 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Menu du Moment</h1>
   </header>
 
   <div class="menu">
-    <!-- Premier plat -->
+    <!-- Section pour le produit "Pensez du fond des abysses en duo " avec deux photos -->
     <section>
-      <h2>Pensez du fond des abysses en duo</h2>
-      <figure>
-        <!-- Adaptez le chemin src à vos noms de fichiers -->
-        <img src="Plat/IMG_20250220_044906_456.jpg" alt="Pensez du fond des abysses">
-        <figcaption>Quantité disponible : 6</figcaption>
-      </figure>
+      <h2>Pensez du fond des abysses en duo </h2>
+      <div class="product-images">
+        <!-- Première photo -->
+        <figure>
+          <img src="Plat/IMG_20250220_044906_456.jpg" alt="Pensez du fond des abyssesen duo - Vue 1">
+          <figcaption>Quantité disponible : 5</figcaption>
+        </figure>
+        <!-- Deuxième photo -->
+        <figure>
+          <img src="Plat/IMG_20250220_044906_456_alt.jpg" alt="Pensez du fond des abysses - Vue 2">
+          <figcaption>Quantité disponible : 5</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <!-- Deuxième plat -->
+    <!-- Section pour un autre produit -->
     <section>
       <h2>Poulet Basquaise</h2>
       <figure>
-        <!-- Adaptez le chemin src à vos noms de fichiers -->
         <img src="Plat/IMG_20250220_055601_088.jpg" alt="Poulet Basquaise">
-        <figcaption>Quantité disponible : 6</figcaption>
+        <figcaption>Quantité disponible : 3</figcaption>
       </figure>
     </section>
-
-    <!-- Ajoutez d'autres sections selon vos plats -->
   </div>
-
 </body>
 </html>
