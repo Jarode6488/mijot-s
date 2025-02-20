@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Menu</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Menu du Moment</title>
+  <style>
+    /* Style de base */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffe8d6; /* Couleur de fond chaleureuse */
+      font-family: Arial, sans-serif;
+      text-align: center; /* Centre le texte dans tout le body */
+    }
+
+    header {
+      background-color: #f4a261; /* Bandeau en haut (optionnel) */
+      color: #fff;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .menu {
+      margin: 40px auto;
+      max-width: 800px; /* Largeur max pour ne pas trop étirer sur grand écran */
+    }
+
+    section {
+      margin: 30px 0;
+    }
+
+    /* Pour les images */
+    figure {
+      display: inline-block; /* Pour que l'image et sa légende restent groupées */
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    figure img {
+      max-width: 300px;       /* Ajuste la taille max de l'image */
+      border-radius: 8px;     /* Coins légèrement arrondis */
+      display: block;
+      margin: 0 auto;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-style: italic;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <h1>Menus du Jour</h1>
+    <h1>Menu du Moment</h1>
   </header>
 
-  <!-- Section pour le premier plat (les deux premières photos) -->
-  <section class="menu-section">
-    <h2>Pensez du fond des abysses en duo<br>Riz au beurre Citronné</h2>
-    <div class="images-container">
+  <div class="menu">
+    <!-- Premier plat -->
+    <section>
+      <h2>Pensez du fond des abysses</h2>
       <figure>
-        <img src="images/abysses1.jpg" alt="Pensez du fond des abysses - Plat 1">
-        <figcaption>Version 1</figcaption>
+        <!-- Adaptez le chemin src à vos noms de fichiers -->
+        <img src="Plat/IMG_20250220_044906_456.jpg" alt="Pensez du fond des abysses">
+        <figcaption>Quantité disponible : 5</figcaption>
       </figure>
-      <figure>
-        <img src="images/abysses2.jpg" alt="Pensez du fond des abysses - Plat 2">
-        <figcaption>Version 2</figcaption>
-      </figure>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section pour le deuxième plat (les deux dernières photos) -->
-  <section class="menu-section">
-    <h2>Poulet Basquaise<br>Pomme de Terre</h2>
-    <div class="images-container">
+    <!-- Deuxième plat -->
+    <section>
+      <h2>Poulet Basquaise</h2>
       <figure>
-        <img src="images/poulet1.jpg" alt="Poulet Basquaise - Plat 3">
-        <figcaption>Option 1</figcaption>
+        <!-- Adaptez le chemin src à vos noms de fichiers -->
+        <img src="Plat/IMG_20250220_055601_088.jpg" alt="Poulet Basquaise">
+        <figcaption>Quantité disponible : 3</figcaption>
       </figure>
-      <figure>
-        <img src="images/poulet2.jpg" alt="Poulet Basquaise - Plat 4">
-        <figcaption>Option 2</figcaption>
-      </figure>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>© 2025 - Mon Menu</p>
-  </footer>
+    <!-- Ajoutez d'autres sections selon vos plats -->
+  </div>
 
 </body>
 </html>
